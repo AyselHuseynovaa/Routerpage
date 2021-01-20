@@ -1,0 +1,62 @@
+.webPage {
+  background-color: #264653;
+}
+
+.webPage .navbar {
+  height: 90px;
+}
+
+.webPage .navbar .nav-left-col .logo {
+  margin-left: 4rem;
+  color: white;
+}
+
+.webPage .navbar .nav-right-col {
+  margin-right: 4rem;
+  width: 45%;
+  padding-top: 1rem;
+}
+
+.webPage .navbar .nav-right-col ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.webPage .navbar .nav-right-col ul li {
+  color: white;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+.webPage .navbar .nav-right-col ul .border {
+  border: 1px solid white;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+}
+
+.webPage .main .left-col {
+  padding: 12rem 0rem 0rem 5rem;
+  color: white;
+}
+
+.webPage .main .left-col button {
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 0.5rem;
+}
+
+.webPage .main .right-col {
+  padding: 3rem 4rem 0rem;
+}
+/*# sourceMappingURL=App.css.map */
