@@ -1,23 +1,32 @@
 import React, { Component } from "react";
+import { Route, Switch, Link } from "react-router-dom";
+
 class Home extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { query: "" };
+    this.handleChange = this.handleChange.bind(this);
+  }
+  handleChange(e) {
+    this.setState({ query: e.target.value });
+  }
+
   render() {
     return (
-      <div className="container-fluid webPage">
-        <div className="main row">
-          <div className="col-md-6 left-col">
-            <h1>Real Benefits</h1>
-            <h1>Real People</h1>
-            <p>
-              We combine corportate benefits with strategic <br />
-              financial managemenet to provide valuable solution <br /> for
-              companies at scale
-            </p>
-            <button>Schedule a consult</button>
-          </div>
-          <div className="col-md-6 right-col">
-            <img src="https://images.unsplash.com/photo-1582015752624-e8b1c75e3711?ixid=MXwxMjA3fDB8MHxzZWFyY2h8OXx8YnVzaW5lc3MlMjBtYW58ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"></img>
-          </div>
+      <div className="container-fluid page">
+        <div className="search">
+          <input
+            placeholder="Search"
+            type="text"
+            onChange={this.handleChange}
+            value={this.state.query}
+          />
+          <Link to={`/Search/${this.state.query}`}>
+            <button>Search</button>
+          </Link>
         </div>
+
+        <div className="bg-color"></div>
       </div>
     );
   }

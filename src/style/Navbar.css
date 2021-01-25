@@ -1,0 +1,55 @@
+.webPage .navbar {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  height: 70px;
+}
+
+.webPage .navbar .left-col {
+  padding-left: 5rem;
+}
+
+.webPage .navbar .left-col .logo {
+  font-weight: 600;
+}
+
+.webPage .navbar .main-col {
+  margin-right: 4rem;
+  width: 20%;
+  padding-top: 1rem;
+}
+
+.webPage .navbar .main-col ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.webPage .navbar .main-col ul li {
+  color: black;
+  letter-spacing: 1px;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.webPage .navbar .right-col {
+  padding-left: 8rem;
+}
+
+.webPage .navbar .right-col .border {
+  font-weight: 600;
+  font-size: 18px;
+  border: 1px solid black;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  color: black;
+}
+/*# sourceMappingURL=Navbar.css.map */

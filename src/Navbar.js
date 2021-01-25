@@ -10,13 +10,13 @@ render() {
         <div className="container-fluid webPage">
 
             <div className="navbar row">
-            <div className="col-md-5 nav-left-col">
-                <h2 className="logo">Burnham</h2>
+            <div className=" col-md-4 left-col">
+                <h2 className="logo">Studio.</h2>
                 </div>
-                <div className="col-md-7 nav-right-col">
+                <div className=" col-md-5 main-col">
                 <ul>
                     <Link exact to="/" >
-                    <li className="border">Home</li> 
+                    <li>Home</li> 
                     </Link>
                     <Link exact to="/about">
                         <li>About</li>
@@ -24,10 +24,13 @@ render() {
                     <Link exact to="/blog">
                         <li>Blog</li>
                     </Link>
-                    <Link exact to="/contact">
-                        <li >Contact</li>
-                    </Link>
+                   
                 </ul>
+                </div>
+                <div className=" col-md-3 right-col">
+                <Link exact to="/contact">
+                        <span className="border">Contact</span>
+                    </Link>
                 </div>
              </div>
         </div>
